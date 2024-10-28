@@ -1,4 +1,4 @@
-import boots from '../Assets/cowboy-boots-4657844_1280-removebg-preview.png';
+import boots from '../Assets/cowboy-boots-974927_1280-removebg-preview.png';
 import hat from '../Assets/cowboyhat.webp';
 import winterBoots from '../Assets/winterBoots.webp';
 
