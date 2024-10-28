@@ -3,7 +3,6 @@ import './LoginForm.css';
 
 function LoginForm() {
   return (
-    <div className="login-container">
       <div className="wrapper">
         <form action="">
           <h1>Login</h1>
@@ -32,7 +31,6 @@ function LoginForm() {
           </div>
         </form>
       </div>
-    </div>
   );
 }
 export default LoginForm;
