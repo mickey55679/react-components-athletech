@@ -114,3 +114,19 @@ font-size: 18px;
         width: 90%;
     }
 }
+@media screen and (max-width: 800px){
+    .mainContainer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 3rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .mainContainer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5rem 2rem;
+    }
+    .card .desc {
+        width: 90%;
+
+    }
+}
