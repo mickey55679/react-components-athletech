@@ -13,7 +13,7 @@ function ProductCard() {
               <div key={id} className="box">
                 <div className="card">
                   <div className="image">
-                    <img src={image} alt="" />
+                    <img src={image} width="100%"alt="" />
                   </div>
                   <div className="desc">
                     <h1>{title}</h1>
