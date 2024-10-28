@@ -27,6 +27,7 @@ function ProductCard() {
                     <FaRegStar className="icon" />
                   </div>
                 </div>
+                <button className="btn">Add To Cart</button>
               </div>
             );
         })
