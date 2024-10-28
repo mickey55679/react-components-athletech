@@ -11,10 +11,9 @@ font-family: 'Poppins', sans-serif;
 display: flex;
 justify-content: center;
 align-items: center;
+min-height: 100vh;
+background: seagreen;
 
-}
-code {
-  font-family: source-code-pro, Menlo, Manaco, Consolas, 'Courier New', monospace;
 }
 h2{
   text-align: center;
