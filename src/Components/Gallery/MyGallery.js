@@ -1,3 +1,5 @@
+import './MyGallery.css';
+
 function MyGallery() {
   return (
     <div className="gallery-container">
