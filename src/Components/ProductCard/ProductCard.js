@@ -1,6 +1,7 @@
 import "./ProductCard.css";
 import Data from "./Data";
 import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 function ProductCard() {
   return (
@@ -19,7 +20,11 @@ function ProductCard() {
                     <span>${price}</span>
                   </div>
                   <div className="star">
-                    <FaStar className="icon"/>
+                    <FaStar className="icon" />
+                    <FaStar className="icon" />
+                    <FaStar className="icon" />
+                    <FaRegStar className="icon" />
+                    <FaRegStar className="icon" />
                   </div>
                 </div>
               </div>
