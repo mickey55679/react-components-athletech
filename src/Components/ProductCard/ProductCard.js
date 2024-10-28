@@ -1,19 +1,29 @@
 import "./ProductCard.css";
 import Data from "./Data";
+import { FaStar } from "react-icons/fa";
 
 function ProductCard() {
   return (
   <div className="mainContainer">
     {
         Data.map(({id, image, title, description, price}) => {
-         <div key={id} className="box">
-            <div className="card">
-                <div className="image">
+            return (
+              <div key={id} className="box">
+                <div className="card">
+                  <div className="image">
                     <img src={image} alt="" />
-
+                  </div>
+                  <div className="desc">
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                    <span>${price}</span>
+                  </div>
+                  <div className="star">
+                    <FaStar className="icon"/>
+                  </div>
                 </div>
-            </div>
-         </div>
+              </div>
+            );
         })
     }
 
