@@ -94,4 +94,23 @@ font-size: 18px;
 .box:nth-child(3) .card .image::before {
     background: #afd4de;
 }
+.box:nth-child(1) .card span {
+    color: #4d3f53;
+}
+.box:nth-child(2) .card span {
+    color: #b27122;
+}
+.box:nth-child(3) .card span {
+    color: #afd4de
+}
 
+/* Media Queries */
+
+@media screen and (max-width: 998px){
+    .mainContainer{
+        padding: 0 3rem;
+    }
+    .card .image{
+        width: 90%;
+    }
+}
