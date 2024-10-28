@@ -62,4 +62,36 @@
 }
 .card .desc p {
     font-size: 14px;
+    margin: 10px 0 20px;  
 }
+.card span {
+font-size: 18px;
+}
+.card .star .icon{
+    font-size: 18px;
+    color: #fcaa34;
+}
+.btn{
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.box:nth-child(1) .btn,
+.box:nth-child(1) .card .image::before {
+    background: #4d3f53;
+}
+.box:nth-child(2) .btn,
+.box:nth-child(2) .card .image::before {
+    background: #b27122;
+}
+.box:nth-child(3) .btn,
+.box:nth-child(3) .card .image::before {
+    background: #afd4de;
+}
+
