@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import MyGallery from './MyGallery';
+import MyGallery from './Components/Gallery/MyGallery';
 import LoginForm from './Components/LoginForm/LoginForm';
 
 
