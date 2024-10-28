@@ -14,6 +14,7 @@ export default function MyApp() {
       <MyGallery />
       <h2>Login Component</h2>
       <LoginForm />
+      <h3>Product Component</h3>
     </div>
   );
 }
