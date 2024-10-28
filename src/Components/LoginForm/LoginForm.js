@@ -1,4 +1,5 @@
 import { FaUser } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
 
 function LoginForm() {
   return (
@@ -12,6 +13,7 @@ function LoginForm() {
           </div>
           <div className="input-box">
             <input type="password" placeholder="Password" required />
+            <FaLock />
           </div>
 
           <div className="remember-forgot">
