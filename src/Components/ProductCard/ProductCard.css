@@ -19,6 +19,9 @@
     background: #fff;
     text-align: center;
     transition: .3s ease-in-out;
+    border-radius: 8px;
+    margin: 20px;
+    padding-bottom: 20px;
 }
 .mainContainer .box:hover{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -32,6 +35,7 @@
     background: #f9f9f9;
     margin: 10px auto 25px;
     position: relative;
+    border-radius: 8px;
 }
 .card .image::before {
     content: "";
@@ -72,7 +76,7 @@ font-size: 18px;
     color: #fcaa34;
 }
 .btn{
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin-top: 15px;
     border: none;
@@ -81,6 +85,11 @@ font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 .box:nth-child(1) .btn,
 .box:nth-child(1) .card .image::before {
@@ -130,3 +139,5 @@ font-size: 18px;
 
     }
 }
+
+
