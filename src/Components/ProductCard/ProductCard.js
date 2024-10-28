@@ -1,5 +1,6 @@
 import "./ProductCard.css";
 import Data from "./Data";
+// Icon
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 
