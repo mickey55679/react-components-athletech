@@ -23,7 +23,10 @@ h2{
 }
 .wrapper{
   width: 420px;
-  background: slateblue;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(0, 0, 0, .2);
   color: #fff;
   border-radius: 10px;
   padding: 30px 40px;
@@ -48,6 +51,7 @@ h2{
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
+  padding-left: 20px;
 }
 .input-box input::placeholder {
   color: #fff;
