@@ -50,3 +50,16 @@
 .card .image:hover img {
     transform: scale(1.1);
 }
+.card .desc{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.card .desc h1{
+    font-size: 18px; 
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card .desc p {
+    font-size: 14px;
+}
