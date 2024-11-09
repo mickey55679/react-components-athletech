@@ -53,10 +53,14 @@ function Checkout() {
                 <option value="2027">2028</option>
                 <option value="2029">2029</option>
                 <option value="2030">2030</option>
-              
               </select>
             </div>
+            <div className="inputbox">
+              <span>cvv</span>
+              <input type="text" maxlength="4" class="cvv-input"></input>
+            </div>
           </div>
+          <input type="submit" value="submit" class="submit-btn" />
         </form>
       </div>
     </>
