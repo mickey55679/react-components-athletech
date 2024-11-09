@@ -19,7 +19,8 @@ export default function MyApp() {
       <ProductCard />
       <h4>Checkout Component</h4>
       <Checkout />
-      <h5>Checkout Component</h5>
+      <h5>Shopping Cart</h5>
+      <ShoppingCart />
     </div>
   );
 }
