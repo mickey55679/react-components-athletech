@@ -8,7 +8,7 @@
 }
 .mainContainer{
     display: flex;
-      background: rgba(242, 242, 242, 255);
+    background: rgba(242, 242, 242, 255);
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
