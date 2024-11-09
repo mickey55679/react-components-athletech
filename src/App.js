@@ -1,10 +1,5 @@
 import './App.css';
 import React from "react";
-// import MyGallery from './Components/Gallery/MyGallery';
-// import LoginForm from './Components/LoginForm/LoginForm';
-// import ProductCard from './Components/ProductCard/ProductCard';
-// import Checkout from './Components/Checkout/Checkout';
-// import ShoppingCart from './Components/ShoppingCart/ShoppingCart'
 import {Checkout, LoginForm, MyGallery, ProductCard, ShoppingCart} from './Components/index'
 
 
