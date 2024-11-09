@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: Uppercase;
+}
+.container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+.container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+}
+.container form .inputBox{
+    margin-top: 20px;
+}
+.container form .inputBox span{
+    
+}
