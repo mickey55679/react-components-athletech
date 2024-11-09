@@ -17,7 +17,7 @@ export default function MyApp() {
       <LoginForm />
       <h3>Product Component</h3>
       <ProductCard />
-      <h4>Ceckout Component</h4>
+      <h4>Checkout Component</h4>
       <Checkout />
       <h5>Checkout Component</h5>
     </div>

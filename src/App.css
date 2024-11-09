@@ -3,10 +3,16 @@ h1 {
 }
 h2{
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
 }
 h3{
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
      background: rgba(242, 242, 242, 255);
+}
+h4{ text-align: center;
+    font-size: 2rem;
+}
+h5{ text-align: center;
+    font-size: 2rem;
 }
