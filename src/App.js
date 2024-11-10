@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import {Checkout, LoginForm, MyGallery, ProductCard, ShoppingCart} from './Components/index'
+import {Checkout, LoginForm, MyGallery, ProductCard, Navbar} from './Components/index'
 
 
 
@@ -15,8 +15,8 @@ export default function MyApp() {
       <ProductCard />
       <h4>Checkout Component</h4>
       <Checkout />
-      <h5>Shopping Cart</h5>
-      <ShoppingCart />
+      <h5>Navbar</h5>
+      <Navbar />
     </div>
   );
 }
