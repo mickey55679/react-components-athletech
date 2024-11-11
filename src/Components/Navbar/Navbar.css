@@ -69,9 +69,15 @@ nav li:first-child{
   display: flex;
   flex-direction: column;
 }
+.menu-button{
+  display: none;
+}
 @media(max-width: 880px){
   .hideOnMobile{
     display: none;
+  }
+  .menu-button{
+    display: block;
   }
 }
 @media(max-width: 400px){

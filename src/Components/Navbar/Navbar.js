@@ -43,7 +43,7 @@ function Navbar() {
         <li className="hideOnMobile">
           <a href="#">Contact</a>
         </li>
-        <li onClick={toggleSidebar}>
+        <li onClick={toggleSidebar} className="menu-button">
           <a href="#">
             <FontAwesomeIcon icon={faBars} />
           </a>
