@@ -13,10 +13,16 @@ function Navbar() {
       <div className="navbar">
         <h2>BrandName</h2>
         <button className="menu-toggle" onClick={toggleMenu}>
-          {isOpen ? "✕" : "☰"}
+          ☰
         </button>
         <nav className={`nav-menu ${isOpen ? "open" : ""}`}>
           <ul>
+            {/* "X" button as a menu item */}
+            {isOpen && (
+              <li className="close-menu">
+                <button onClick={toggleMenu}>✕</button>
+              </li>
+            )}
             <li>
               <a href="#">Home</a>
             </li>
