@@ -69,4 +69,8 @@ nav li:first-child{
   display: flex;
   flex-direction: column;
 }
-
+@media(max-width: 880px){
+  .hideOnMobile{
+    display: none;
+  }
+}

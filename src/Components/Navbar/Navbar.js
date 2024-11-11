@@ -34,13 +34,13 @@ function Navbar() {
             <img src={logo} width="100%" alt="Logo" />
           </a>
         </li>
-        <li>
+        <li className="hideOnMobile">
           <a href="#">Home</a>
         </li>
-        <li>
+        <li className="hideOnMobile">
           <a href="#">About</a>
         </li>
-        <li>
+        <li className="hideOnMobile">
           <a href="#">Contact</a>
         </li>
         <li onClick={toggleSidebar}>
