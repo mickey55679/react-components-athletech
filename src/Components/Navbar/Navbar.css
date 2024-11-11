@@ -48,11 +48,11 @@
   color: var(--secondary-color);
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
-  .container {
+  .container-navbar {
     height: 100%;
   }
 
-  .container .navbar {
+  .container-navbar .navbar {
     flex-direction: column;
   }
 }
