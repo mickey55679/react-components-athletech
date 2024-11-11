@@ -4,4 +4,9 @@
 }
 body{
   min-height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2023/05/19/04/31/road-8003640_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
