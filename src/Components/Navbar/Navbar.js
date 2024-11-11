@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 const logo = require("../Assets/aperture-1142967_1280.webp");
 
@@ -10,13 +10,14 @@ function Navbar() {
   function toggleSidebar() {
     setIsSidebarVisible(!isSidebarVisible);
   }
+  
 
   return (
     <nav>
       <ul className={`sidebar ${isSidebarVisible ? "visible" : ""}`}>
         <li>
           <a href="#">
-            <img src={logo} width="100%" alt="Logo" />
+            <FontAwesomeIcon icon={faXmark} />
           </a>
         </li>
         <li>
