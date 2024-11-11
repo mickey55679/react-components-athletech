@@ -74,3 +74,8 @@ nav li:first-child{
     display: none;
   }
 }
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
