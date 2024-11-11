@@ -9,9 +9,7 @@ function Navbar() {
 
   function toggleSidebar() {
     setIsSidebarVisible(!isSidebarVisible);
-  }
-
-
+  };
   return (
     <nav>
       <ul className={`sidebar ${isSidebarVisible ? "visible" : ""}`}>
