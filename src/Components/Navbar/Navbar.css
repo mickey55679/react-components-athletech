@@ -2,11 +2,51 @@
   margin: 0;
   padding: 0;
 }
-body{
-  min-height: 100vh;
+/* body */
+/* body{
+    min-height: 100vh;
   background-image: url("https://cdn.pixabay.com/photo/2023/05/19/04/31/road-8003640_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
+}
+img{
+  width: 50px;
+  height: 50px;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover {
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
 }
