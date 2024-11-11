@@ -7,6 +7,8 @@ import {Checkout, LoginForm, MyGallery, ProductCard, Navbar} from './Components/
 export default function MyApp() {
   return (
     <div>
+      <h5>Navbar</h5>
+      <Navbar />
       <h1>Gallery Component</h1>
       <MyGallery />
       <h2>Login Component</h2>
@@ -15,8 +17,6 @@ export default function MyApp() {
       <ProductCard />
       <h4>Checkout Component</h4>
       <Checkout />
-      <h5>Navbar</h5>
-      <Navbar />
     </div>
   );
 }
