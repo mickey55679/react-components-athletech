@@ -1,10 +1,27 @@
 import './Navbar.css'
 
 function Navbar() {
-    return(
-        <>
-        
-        </>
-    )
+    return (
+      <>
+        <div className="container-navbar">
+          <div className="navbar">
+            <h2>BrandName</h2>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </>
+    );
 }
 export default Navbar;
