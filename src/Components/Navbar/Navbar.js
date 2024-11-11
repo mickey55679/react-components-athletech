@@ -10,12 +10,12 @@ function Navbar() {
   function toggleSidebar() {
     setIsSidebarVisible(!isSidebarVisible);
   }
-  
+
 
   return (
     <nav>
       <ul className={`sidebar ${isSidebarVisible ? "visible" : ""}`}>
-        <li>
+        <li onClick={toggleSidebar}>
           <a href="#">
             <FontAwesomeIcon icon={faXmark} />
           </a>
