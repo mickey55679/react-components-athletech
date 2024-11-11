@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import myLogo from '../Assets/doglogo.webp'
+const logo = require('../Assets/doglogo.webp');
 
 function Navbar() {
 
@@ -9,16 +9,16 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="#"></a>
+            <a href="#"><img src={logo} width="100%"/></a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
