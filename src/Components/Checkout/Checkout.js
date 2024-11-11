@@ -1,58 +1,101 @@
 import "./Checkout.css";
-import React from "react";
+import React, { useState } from "react";
 import creditCardChip from "../Assets/chip.png";
 import visa from "../Assets/visa.png";
 
 function Checkout() {
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardHolder, setCardHolder] = useState("");
+  const [expMonth, setExpMonth] = useState("mm");
+  const [expYear, setExpYear] = useState("yy");
+  const [cvv, setCvv] = useState("");
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
     <>
       <div className="container">
         <div className="card-container">
-          <div className="front">
+          {/* Front of the card */}
+          <div
+            className={`front ${isFlipped ? "flipped" : ""}`}
+            style={{
+              transform: isFlipped
+                ? "perspective(1000px) rotateY(-180deg)"
+                : "perspective(1000px) rotateY(0deg)",
+            }}
+          >
             <div className="image">
               <img src={creditCardChip} alt="Credit Card Chip" />
               <img src={visa} alt="Visa Logo" />
             </div>
-            <div className="card-number-box">################</div>
+            <div className="card-number-box">
+              {cardNumber || "################"}
+            </div>
             <div className="flexbox">
               <div className="box">
                 <span>card holder</span>
-                <div className="card-holder-name">full name</div>
+                <div className="card-holder-name">
+                  {cardHolder || "full name"}
+                </div>
               </div>
               <div className="box">
                 <span>expires</span>
                 <div className="expiration">
-                  <span className="exp-month">mm</span>
-                  <span className="exp-year">yy</span>
+                  <span className="exp-month">{expMonth}</span> /{" "}
+                  <span className="exp-year">{expYear}</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="back">
+          {/* Back of the card */}
+          <div
+            className="back"
+            style={{
+              transform: isFlipped
+                ? "perspective(1000px) rotateY(0deg)"
+                : "perspective(1000px) rotateY(180deg)",
+            }}
+          >
             <div className="stripe"></div>
             <div className="box">
               <span>cvv</span>
-              <div className="cvv-box"></div>
+              <div className="cvv-box">{cvv}</div>
               <img src={visa} alt="Visa Logo" />
             </div>
           </div>
         </div>
 
+        {/* Form for card inputs */}
         <form action="">
           <div className="inputBox">
             <span>card number</span>
-            <input type="text" maxLength="16" className="card-number-input" />
+            <input
+              type="text"
+              maxLength="16"
+              className="card-number-input"
+              value={cardNumber}
+              onChange={(e) => setCardNumber(e.target.value)}
+            />
           </div>
           <div className="inputBox">
             <span>card holder</span>
-            <input type="text" className="card-holder-input" />
+            <input
+              type="text"
+              className="card-holder-input"
+              value={cardHolder}
+              onChange={(e) => setCardHolder(e.target.value)}
+            />
           </div>
           <div className="flexbox">
             <div className="inputBox">
               <span>expiration mm</span>
-              <select name="" id="" className="month-input">
-                <option value="month" disabled>
+              <select
+                className="month-input"
+                value={expMonth}
+                onChange={(e) => setExpMonth(e.target.value)}
+              >
+                <option value="mm" disabled>
                   month
                 </option>
                 <option value="01">01</option>
@@ -71,8 +114,12 @@ function Checkout() {
             </div>
             <div className="inputBox">
               <span>expiration yy</span>
-              <select name="" id="" className="year-input">
-                <option value="year" disabled>
+              <select
+                className="year-input"
+                value={expYear}
+                onChange={(e) => setExpYear(e.target.value)}
+              >
+                <option value="yy" disabled>
                   year
                 </option>
                 <option value="2021">2021</option>
@@ -89,7 +136,15 @@ function Checkout() {
             </div>
             <div className="inputBox">
               <span>cvv</span>
-              <input type="text" maxLength="4" className="cvv-input" />
+              <input
+                type="text"
+                maxLength="4"
+                className="cvv-input"
+                value={cvv}
+                onChange={(e) => setCvv(e.target.value)}
+                onFocus={() => setIsFlipped(true)}
+                onBlur={() => setIsFlipped(false)}
+              />
             </div>
           </div>
           <input type="submit" value="submit" className="submit-btn" />
@@ -100,4 +155,3 @@ function Checkout() {
 }
 
 export default Checkout;
-
